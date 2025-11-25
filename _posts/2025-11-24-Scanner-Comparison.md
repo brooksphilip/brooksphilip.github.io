@@ -2,7 +2,7 @@
 title: Why Trivy Shows Different Results (And Why It's Actually Worse)
 date: 2025-11-24 11:44:00 +0000
 categories: [Container Security, Scanners]
-tags: [trivy, grype]     # TAG names should always be lowercase
+# tags: [trivy, grype]     # TAG names should always be lowercase
 ---
 
 # Why Trivy Shows Different Results (And Why It's Actually Worse)
@@ -214,4 +214,4 @@ This is exactly why you need Grype in your security stack for DoD environments w
 - False negatives are worse than false positives
 - Supply chain verification is critical
 
-**Your takeaway:** Never rely solely on Trivy for images where the package database might be removed. Always validate with Grype or a similar tool that does binary analysis.
+**My takeaway:** Never rely solely on Trivy for images where the package database might be removed. Always validate with Grype or a similar tool that does binary analysis.
