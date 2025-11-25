@@ -2,7 +2,7 @@
 title: Why Trivy Shows Different Results (And Why It's Actually Worse)
 date: 2025-11-24 11:44:00 +0000
 categories: [Container Security, Scanners]
-tags: [trivy, grype]     # TAG names should always be lowercase
+# tags: [trivy, grype]     # TAG names should always be lowercase
 ---
 
 # Why Trivy Shows Different Results (And Why It's Actually Worse)
