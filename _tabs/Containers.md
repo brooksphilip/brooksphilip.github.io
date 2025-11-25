@@ -1,7 +1,6 @@
 ---
-layout: containers
-icon: fas fa-tags
+layout: category
+category: kubernetes
+icon: fas fa-cube
 order: 5
 ---
-
-# Test

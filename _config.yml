@@ -16,7 +16,7 @@ timezone: America/New_York
 
 title: Philip Brooks # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Stuff I am learning or things I have documented # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Stuff I am learning or things I have documented.
