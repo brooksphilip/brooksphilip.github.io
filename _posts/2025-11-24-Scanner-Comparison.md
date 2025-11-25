@@ -7,6 +7,10 @@ categories: [Container Security, Scanners]
 
 # Why Trivy Shows Different Results (And Why It's Actually Worse)
 
+## Introduction
+
+Lets first start by building two container images. One with a package manager and one without. 
+
 ## Your Trivy Results
 
 ### WITHOUT Package Database
@@ -178,32 +182,6 @@ for cataloger := range catalogers {
     packages.append(cataloger.catalog(image))
 }
 return findVulnerabilities(packages)
-```
-
-## Recommendation for Your Harbor Setup
-
-```yaml
-# Harbor scanner configuration
-scanners:
-  - name: trivy
-    enabled: true
-    use_for:
-      - Standard images (SUSE, RHEL, Ubuntu)
-      - Quick CI/CD feedback
-    
-  - name: grype  
-    enabled: true
-    use_for:
-      - Chainguard proxy cache
-      - Hardened images
-      - Unknown sources
-      - Compliance verification
-
-# Policy: Require BOTH to pass for production
-policy:
-  production:
-    - trivy: no HIGH/CRITICAL
-    - grype: no CRITICAL
 ```
 
 ## Bottom Line
