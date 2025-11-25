@@ -1,6 +1,7 @@
 ---
 layout: category
-category: Container Security
+category: container-security
 icon: fas fa-cube
 order: 5
+title: Containers
 ---
