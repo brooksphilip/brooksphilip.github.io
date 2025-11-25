@@ -1,0 +1,12 @@
+---
+title: Hello
+date: 2025-11-24 12:00:00 +0000
+categories: [homelab, kubernetes]
+tags: [homelab]     # TAG names should always be lowercase
+---
+
+# Welcome
+
+```bash
+apt update
+```
