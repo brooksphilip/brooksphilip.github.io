@@ -11,6 +11,21 @@ categories: [Container Security, Scanners]
 
 Lets first start by building two container images. One with a package manager and one without. 
 
+With a Package manager
+```bash
+FROM alpine:3.19
+RUN apk add --no-cache curl openssl
+```
+
+Without a Package manager
+```bash
+FROM alpine:3.19
+RUN apk add --no-cache curl openssl && \
+    rm -rf /var/cache/apk/* \
+           /lib/apk/db/* \
+           /etc/apk/
+```
+
 ## Your Trivy Results
 
 ### WITHOUT Package Database
